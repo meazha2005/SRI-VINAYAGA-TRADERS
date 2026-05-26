@@ -1,0 +1,103 @@
+.card {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--color-navy-pale);
+}
+
+/* Image */
+.imageWrap {
+  position: relative;
+  aspect-ratio: 4/3;
+  background: var(--color-gray-100);
+  overflow: hidden;
+  display: block;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gray-300);
+}
+
+.badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+}
+
+/* Body */
+.body {
+  padding: 1.125rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-gray-900);
+  line-height: 1.3;
+  margin-bottom: 0.25rem;
+  display: block;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.name:hover {
+  color: var(--color-navy);
+}
+
+.brand {
+  font-size: 0.8125rem;
+  color: var(--color-gray-400);
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  margin-bottom: 1rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.detailBtn {
+  flex: 1;
+}
+
+.cartBtn {
+  flex-shrink: 0;
+}

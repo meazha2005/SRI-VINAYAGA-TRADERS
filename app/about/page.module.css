@@ -1,0 +1,375 @@
+.storyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.storyContent {}
+
+.storyTitle {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 800;
+  color: var(--color-gray-900);
+  margin-bottom: 1.25rem;
+  line-height: 1.2;
+}
+
+.storyText {
+  font-size: 1rem;
+  color: var(--color-gray-600);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.storyStats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.storyStat {
+  text-align: center;
+}
+
+.storyStatVal {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: var(--color-navy);
+  font-family: var(--font-display);
+}
+
+.storyStatLabel {
+  display: block;
+  font-size: 0.8125rem;
+  color: var(--color-gray-500);
+  font-weight: 500;
+}
+
+.storyVisual {}
+
+.visualCard {
+  background: linear-gradient(135deg, var(--color-navy), var(--color-navy-mid));
+  border-radius: var(--radius-2xl);
+  padding: 3rem;
+  color: white;
+  text-align: center;
+}
+
+.visualInner {}
+
+.visualIcon {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.visualCard h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.visualCard p {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7;
+  font-size: 0.9rem;
+}
+
+.visualDivider {
+  width: 60px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 1.5rem auto;
+}
+
+.visualQuote {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-size: 0.975rem !important;
+}
+
+/* Values */
+.valuesSection {
+  background: var(--color-gray-50);
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.valueCard {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-xl);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.valueCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--color-navy-pale);
+}
+
+.valueIcon {
+  display: block;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.valueTitle {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--color-gray-800);
+  margin-bottom: 0.625rem;
+}
+
+.valueDesc {
+  font-size: 0.9rem;
+  color: var(--color-gray-500);
+  line-height: 1.6;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-gray-200);
+  transform: translateX(-50%);
+}
+
+.timelineItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.timelineItem.left {
+  flex-direction: row-reverse;
+}
+
+.timelineItem.left .timelineContent {
+  margin-right: 2rem;
+  text-align: right;
+}
+
+.timelineItem.right .timelineContent {
+  margin-left: 2rem;
+}
+
+.timelineContent {
+  flex: 1;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  transition: all 0.2s;
+}
+
+.timelineContent:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-navy-pale);
+}
+
+.timelineYear {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--color-navy);
+  margin-bottom: 0.375rem;
+  font-family: var(--font-display);
+}
+
+.timelineEvent {
+  font-size: 0.9375rem;
+  color: var(--color-gray-600);
+  line-height: 1.5;
+}
+
+.timelineDot {
+  width: 14px;
+  height: 14px;
+  background: var(--color-navy);
+  border: 3px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px var(--color-navy);
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+/* Partners */
+.partnersSection {
+  background: var(--color-gray-50);
+  padding: 4rem 0;
+  overflow: hidden;
+}
+
+.logoCarouselWrap {
+  overflow: hidden;
+  position: relative;
+  padding: 1rem 0;
+}
+
+.logoCarouselWrap::before,
+.logoCarouselWrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  z-index: 1;
+}
+
+.logoCarouselWrap::before {
+  left: 0;
+  background: linear-gradient(to right, var(--color-gray-50), transparent);
+}
+
+.logoCarouselWrap::after {
+  right: 0;
+  background: linear-gradient(to left, var(--color-gray-50), transparent);
+}
+
+.logoCarousel {
+  display: flex;
+  gap: 3rem;
+  animation: scroll 30s linear infinite;
+  width: max-content;
+}
+
+.logoCarousel:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.logoItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  background: white;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  min-width: 140px;
+  transition: box-shadow 0.2s;
+}
+
+.logoItem:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.logoImg {
+  object-fit: contain;
+  filter: grayscale(0.4);
+  transition: filter 0.2s;
+}
+
+.logoImg:hover {
+  filter: grayscale(0);
+}
+
+/* CTA */
+.ctaSection {
+  background: linear-gradient(135deg, var(--color-navy), var(--color-navy-mid));
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.ctaContent h2 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 800;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.ctaContent p {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 2.5rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaBtns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .valuesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .storyGrid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .storyStats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .storyStats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .timeline::before {
+    left: 1rem;
+  }
+
+  .timelineItem {
+    flex-direction: row !important;
+    align-items: flex-start;
+  }
+
+  .timelineItem.left .timelineContent {
+    margin-right: 0;
+    margin-left: 1.5rem;
+    text-align: left;
+  }
+
+  .timelineItem.right .timelineContent {
+    margin-left: 1.5rem;
+  }
+
+  .timelineDot {
+    margin-top: 1.25rem;
+    margin-left: -7px;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+}

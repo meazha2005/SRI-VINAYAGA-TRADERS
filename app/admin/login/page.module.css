@@ -1,0 +1,57 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-mid) 100%);
+  padding: 2rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 440px;
+  background: white;
+  border-radius: var(--radius-2xl);
+  padding: 2.5rem;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.logoIcon {
+  font-size: 2.5rem;
+  color: var(--color-navy);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-gray-900);
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: var(--color-gray-500);
+}
+
+.backLink {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.backLink a {
+  color: var(--color-gray-500);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.backLink a:hover {
+  color: var(--color-navy);
+}

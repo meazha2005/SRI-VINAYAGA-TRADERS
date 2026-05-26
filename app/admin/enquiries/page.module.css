@@ -1,0 +1,35 @@
+.pageHead { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; }
+.pageTitle { font-size: 1.625rem; font-weight: 800; color: var(--color-gray-900); margin-bottom: 0.25rem; }
+.pageDesc { font-size: 0.9375rem; color: var(--color-gray-500); }
+.tabs { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--color-gray-200); flex-wrap: wrap; }
+.tab { display: flex; align-items: center; gap: 0.5rem; padding: 0.625rem 0.875rem; border-radius: var(--radius-md) var(--radius-md) 0 0; font-size: 0.8125rem; font-weight: 600; color: var(--color-gray-500); background: none; border: none; cursor: pointer; transition: all 0.2s; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+.tab:hover { color: var(--color-navy); }
+.activeTab { color: var(--color-navy); border-bottom-color: var(--color-navy); background: var(--color-gray-50); }
+.tabCount { background: var(--color-gray-200); color: var(--color-gray-600); padding: 0.1rem 0.4rem; border-radius: var(--radius-full); font-size: 0.75rem; }
+
+.list { display: flex; flex-direction: column; gap: 1rem; }
+
+.card { background: white; border: 1px solid var(--color-gray-200); border-radius: var(--radius-xl); padding: 1.25rem 1.5rem; transition: box-shadow 0.2s; }
+.card:hover { box-shadow: var(--shadow-md); }
+.isNew { border-left: 4px solid var(--color-danger); }
+
+.header { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
+.meta { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.name { font-weight: 700; font-size: 0.9375rem; color: var(--color-gray-800); }
+.phone, .email { font-size: 0.875rem; }
+.phone a, .email a { color: var(--color-navy-light); text-decoration: none; }
+.right { display: flex; align-items: center; gap: 0.75rem; flex-shrink: 0; }
+.date { font-size: 0.8125rem; color: var(--color-gray-400); }
+
+.itemsList { margin-bottom: 1rem; }
+.itemsTitle { font-size: 0.8125rem; font-weight: 700; color: var(--color-gray-500); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+.item { display: flex; align-items: center; gap: 0.75rem; padding: 0.5rem 0.75rem; background: var(--color-gray-50); border-radius: var(--radius-md); margin-bottom: 0.375rem; }
+.itemName { flex: 1; font-size: 0.9rem; color: var(--color-gray-700); font-weight: 500; }
+.itemQty { font-size: 0.875rem; color: var(--color-gray-500); }
+.itemPrice { font-size: 0.875rem; color: var(--color-navy); font-weight: 600; }
+
+.notes { font-size: 0.9rem; color: var(--color-gray-600); background: var(--color-gray-50); padding: 0.75rem; border-radius: var(--radius-md); border-left: 3px solid var(--color-gray-200); margin-bottom: 1rem; }
+.actions { display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap; }
+.statusSelect { width: 160px; padding: 0.4rem 0.75rem; font-size: 0.875rem; }
+
+.empty { background: white; border: 1px solid var(--color-gray-200); border-radius: var(--radius-xl); padding: 3rem; text-align: center; color: var(--color-gray-400); }

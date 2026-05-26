@@ -1,0 +1,160 @@
+.pageHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.pageTitle {
+  font-size: 1.625rem;
+  font-weight: 800;
+  color: var(--color-gray-900);
+  margin-bottom: 0.25rem;
+}
+
+.pageDesc {
+  font-size: 0.9375rem;
+  color: var(--color-gray-500);
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-gray-200);
+  padding-bottom: 0;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-gray-500);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+
+.tab:hover {
+  color: var(--color-navy);
+  background: var(--color-gray-50);
+}
+
+.activeTab {
+  color: var(--color-navy);
+  border-bottom-color: var(--color-navy);
+  background: var(--color-gray-50);
+}
+
+.tabCount {
+  background: var(--color-gray-200);
+  color: var(--color-gray-600);
+  padding: 0.1rem 0.4rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+}
+
+.activeTab .tabCount {
+  background: var(--color-navy-pale);
+  color: var(--color-navy);
+}
+
+/* Messages list */
+.messagesList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.messageCard {
+  background: white;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-xl);
+  padding: 1.25rem 1.5rem;
+  transition: box-shadow 0.2s;
+}
+
+.messageCard:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.isNew {
+  border-left: 4px solid var(--color-danger);
+}
+
+.msgHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.875rem;
+}
+
+.msgMeta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.msgName {
+  font-weight: 700;
+  font-size: 0.9375rem;
+  color: var(--color-gray-800);
+}
+
+.msgPhone, .msgEmail {
+  font-size: 0.875rem;
+  color: var(--color-gray-500);
+}
+
+.msgPhone a, .msgEmail a {
+  color: var(--color-navy-light);
+  text-decoration: none;
+}
+
+.msgRight {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.msgDate {
+  font-size: 0.8125rem;
+  color: var(--color-gray-400);
+}
+
+.msgBody {
+  font-size: 0.9375rem;
+  color: var(--color-gray-600);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  background: var(--color-gray-50);
+  padding: 0.875rem;
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--color-gray-200);
+}
+
+.msgActions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.empty {
+  background: white;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-xl);
+  padding: 3rem;
+  text-align: center;
+  color: var(--color-gray-400);
+}

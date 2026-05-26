@@ -1,0 +1,153 @@
+.form {}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mainCol, .sideCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-xl);
+  padding: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-gray-800);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.rowTwo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.hint {
+  font-size: 0.8125rem;
+  color: var(--color-gray-400);
+  font-weight: 400;
+}
+
+/* Image upload */
+.imageUpload {
+  position: relative;
+  aspect-ratio: 4/3;
+  border: 2px dashed var(--color-gray-300);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: var(--color-gray-50);
+  margin-bottom: 0.75rem;
+}
+
+.imageUpload:hover {
+  border-color: var(--color-navy);
+  background: var(--color-navy-pale);
+}
+
+.uploadPlaceholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.uploadIcon {
+  font-size: 2.5rem;
+}
+
+.uploadPlaceholder p {
+  font-size: 0.9rem;
+  color: var(--color-gray-500);
+  font-weight: 500;
+}
+
+.uploadHint {
+  font-size: 0.8125rem !important;
+  color: var(--color-gray-400) !important;
+}
+
+.previewImg {
+  object-fit: contain;
+}
+
+.uploadOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.removeImg {
+  width: 100%;
+  color: var(--color-danger);
+  border-color: var(--color-danger);
+  background: var(--color-danger-light);
+}
+
+/* Checkbox */
+.checkboxGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-navy);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.checkboxLabel {
+  font-size: 0.9375rem;
+  color: var(--color-gray-700);
+  cursor: pointer;
+}
+
+/* Actions */
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-gray-200);
+}
+
+@media (max-width: 900px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .rowTwo {
+    grid-template-columns: 1fr;
+  }
+}
