@@ -5,7 +5,7 @@ import styles from './page.module.css';
 
 export const metadata: Metadata = {
   title: 'About Us',
-  description: 'Learn about Sri Vinayaga Traders — Tamil Nadu\'s trusted importer and distributor of premium steel and construction materials since 1982.',
+  description: 'Learn about Sri Vinayaga Traders — Tamil Nadu\'s trusted importer and distributor of premium steel and construction materials.',
 };
 
 const PARTNER_LOGOS = [
@@ -37,7 +37,7 @@ export default function AboutPage() {
       <div className="page-header">
         <div className="container">
           <h1>About Sri Vinayaga Traders</h1>
-          <p>Your trusted partner for premium construction materials since 1982</p>
+          <p>Your trusted partner for premium construction materials.</p>
         </div>
       </div>
 
@@ -49,7 +49,7 @@ export default function AboutPage() {
               <span className="overline">Our Story</span>
               <h2 className={styles.storyTitle}>Four Decades of Building Trust</h2>
               <p className={styles.storyText}>
-                Sri Vinayaga Traders was founded in 1982 in Chennai, Tamil Nadu, with a simple mission:
+                Sri Vinayaga Traders was founded in Chennai, Tamil Nadu, with a simple mission:
                 to provide builders, contractors, and retailers with the highest quality construction
                 materials at fair prices.
               </p>

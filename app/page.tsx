@@ -225,7 +225,7 @@ export default function HomePage() {
               <h2 className={styles.aboutTitle}>Your Trusted Partner for Quality Materials</h2>
               <p className={styles.aboutText}>
                 Sri Vinayaga Traders is a leading importer and distributor of high-quality
-                construction materials, serving Tamil Nadu since 1982. We partner with India&apos;s
+                construction materials, serving Tamil Nadu. We partner with India&apos;s
                 top manufacturers to deliver premium TMT bars, cement, steel sheets, pipes, and more.
               </p>
               <p className={styles.aboutText}>
