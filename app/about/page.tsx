@@ -169,6 +169,11 @@ export default function AboutPage() {
                 <a href="tel:+919751411234" className={styles.branchPhone}>📞 +91 97514 11234</a>
                 <a href="tel:+919751421234" className={styles.branchPhone}>📞 +91 97514 21234</a>
               </div>
+              <div className={styles.branchWebLinkWrap}>
+                <a href="https://www.srivinayagatraders.com/" target="_blank" rel="noopener noreferrer" className={styles.branchWebLink}>
+                  🌐 www.srivinayagatraders.com
+                </a>
+              </div>
             </div>
 
             {/* Branch 2 */}
@@ -202,6 +207,11 @@ export default function AboutPage() {
                 <a href="tel:+919710812345" className={styles.branchPhone}>📞 +91 97108 12345</a>
                 <a href="tel:+917598721234" className={styles.branchPhone}>📞 +91 75987 21234</a>
               </div>
+              <div className={styles.branchWebLinkWrap}>
+                <a href="https://www.srivinayagarings.com/" target="_blank" rel="noopener noreferrer" className={styles.branchWebLink}>
+                  🌐 www.srivinayagarings.com
+                </a>
+              </div>
             </div>
 
             {/* Branch 4 */}
@@ -214,6 +224,11 @@ export default function AboutPage() {
               </p>
               <div className={styles.branchContacts}>
                 <a href="tel:+919514981234" className={styles.branchPhone}>📞 +91 95149 81234</a>
+              </div>
+              <div className={styles.branchWebLinkWrap}>
+                <a href="https://www.srivinayagarings.com/" target="_blank" rel="noopener noreferrer" className={styles.branchWebLink}>
+                  🌐 www.srivinayagarings.com
+                </a>
               </div>
             </div>
           </div>
