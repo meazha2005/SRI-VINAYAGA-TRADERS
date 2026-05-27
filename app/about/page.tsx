@@ -30,15 +30,6 @@ const TEAM_VALUES = [
   { icon: '📈', title: 'Customer Growth', desc: 'Our success is defined by our customers\'s success in their construction projects.' },
 ];
 
-const MILESTONES = [
-  { year: '1982', event: 'Founded in Chennai as a small steel trading firm' },
-  { year: '1995', event: 'Expanded product range to include cement and roofing materials' },
-  { year: '2005', event: 'Partnered with major national brands like Tata Steel, JSW, and SAIL' },
-  { year: '2015', event: 'Opened expanded warehouse for better inventory management' },
-  { year: '2020', event: 'Launched online presence and digital ordering system' },
-  { year: '2024', event: 'Serving 10,000+ customers across Tamil Nadu' },
-];
-
 export default function AboutPage() {
   return (
     <div>
@@ -122,27 +113,6 @@ export default function AboutPage() {
                 <span className={styles.valueIcon}>{v.icon}</span>
                 <h3 className={styles.valueTitle}>{v.title}</h3>
                 <p className={styles.valueDesc}>{v.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Timeline */}
-      <section className="section">
-        <div className="container">
-          <div className="section-heading">
-            <span className="overline">Our Journey</span>
-            <h2>Key Milestones</h2>
-          </div>
-          <div className={styles.timeline}>
-            {MILESTONES.map((m, i) => (
-              <div key={m.year} className={`${styles.timelineItem} ${i % 2 === 0 ? styles.left : styles.right}`}>
-                <div className={styles.timelineContent}>
-                  <span className={styles.timelineYear}>{m.year}</span>
-                  <p className={styles.timelineEvent}>{m.event}</p>
-                </div>
-                <div className={styles.timelineDot} />
               </div>
             ))}
           </div>
