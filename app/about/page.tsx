@@ -147,6 +147,79 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Branches */}
+      <section className={`section ${styles.branchesSection}`}>
+        <div className="container">
+          <div className="section-heading">
+            <span className="overline">Our Presence</span>
+            <h2>Our Branches & Associated Companies</h2>
+            <p>Visit or contact our retail outlets and steel manufacturing branches across Tamil Nadu</p>
+          </div>
+          
+          <div className={styles.branchesGrid}>
+            {/* Branch 1 */}
+            <div className={styles.branchCard}>
+              <span className={styles.branchType}>Steel & Construction Materials</span>
+              <h3 className={styles.branchName}>SRI VINAYAGA TRADERS</h3>
+              <p className={styles.branchAddress}>
+                📍 399/4B, Vandalur Walajabad Highway, Padappai,<br />
+                Kancheepuram, Tamil Nadu 600069
+              </p>
+              <div className={styles.branchContacts}>
+                <a href="tel:+919751411234" className={styles.branchPhone}>📞 +91 97514 11234</a>
+                <a href="tel:+919751421234" className={styles.branchPhone}>📞 +91 97514 21234</a>
+              </div>
+            </div>
+
+            {/* Branch 2 */}
+            <div className={styles.branchCard}>
+              <span className={styles.branchType}>Rings & Wire Products</span>
+              <h3 className={styles.branchName}>SRI VINAYAGA RINGS</h3>
+              <p className={styles.branchAddress}>
+                📍 No. 48&49, Arakonam Road, Rajalakshmi Nagar,<br />
+                Part 2, Sriperumbudur, Thandalam - 602105
+              </p>
+              <div className={styles.branchContacts}>
+                <a href="tel:+919841447494" className={styles.branchPhone}>📞 +91 98414 47494</a>
+                <a href="tel:+919514921234" className={styles.branchPhone}>📞 +91 95149 21234</a>
+              </div>
+              <div className={styles.branchWebLinkWrap}>
+                <a href="https://www.srivinayagarings.com/" target="_blank" rel="noopener noreferrer" className={styles.branchWebLink}>
+                  🌐 www.srivinayagarings.com
+                </a>
+              </div>
+            </div>
+
+            {/* Branch 3 */}
+            <div className={styles.branchCard}>
+              <span className={styles.branchType}>Rings & Wire Products</span>
+              <h3 className={styles.branchName}>SRI VINAYAGA RINGS</h3>
+              <p className={styles.branchAddress}>
+                📍 No. 12/281, Puthantharuvai Road, Panaivilai,<br />
+                Thisayanvilai, Tamil Nadu - 628656
+              </p>
+              <div className={styles.branchContacts}>
+                <a href="tel:+919710812345" className={styles.branchPhone}>📞 +91 97108 12345</a>
+                <a href="tel:+917598721234" className={styles.branchPhone}>📞 +91 75987 21234</a>
+              </div>
+            </div>
+
+            {/* Branch 4 */}
+            <div className={styles.branchCard}>
+              <span className={styles.branchType}>Rings & Wire Products</span>
+              <h3 className={styles.branchName}>SRI VINAYAGA RINGS</h3>
+              <p className={styles.branchAddress}>
+                📍 No. 6 and 7, S.R. Nagar, Panayapuram,<br />
+                Villupuram, Tamil Nadu - 605601
+              </p>
+              <div className={styles.branchContacts}>
+                <a href="tel:+919514981234" className={styles.branchPhone}>📞 +91 95149 81234</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className={styles.ctaSection}>
         <div className="container">

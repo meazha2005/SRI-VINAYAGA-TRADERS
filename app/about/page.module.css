@@ -373,3 +373,131 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Branches CSS */
+.branchesSection {
+  background: var(--color-white);
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.branchesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.branchCard {
+  background: var(--color-gray-50);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.branchCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--color-navy);
+  transition: background var(--transition-fast);
+}
+
+.branchCard:hover::before {
+  background: var(--color-navy-light);
+}
+
+.branchCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-navy-pale);
+  background: white;
+}
+
+.branchType {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-navy-light);
+  margin-bottom: 0.5rem;
+}
+
+.branchName {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--color-navy);
+  margin-bottom: 1rem;
+  font-family: var(--font-display);
+}
+
+.branchAddress {
+  font-size: 0.95rem;
+  color: var(--color-gray-600);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.branchContacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: auto;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.branchPhone {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-gray-800);
+  transition: color var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.branchPhone:hover {
+  color: var(--color-navy-light);
+}
+
+.branchWebLinkWrap {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--color-gray-300);
+}
+
+.branchWebLink {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  transition: color var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.branchWebLink:hover {
+  color: var(--color-navy-light);
+  text-decoration: underline !important;
+}
+
+@media (max-width: 768px) {
+  .branchesGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .branchCard {
+    padding: 1.75rem;
+  }
+}
+
