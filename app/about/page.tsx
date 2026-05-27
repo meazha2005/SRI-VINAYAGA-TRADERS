@@ -61,7 +61,7 @@ export default function AboutPage() {
               <p className={styles.storyText}>
                 Today, we serve thousands of customers across Tamil Nadu, maintaining the same
                 commitment to quality, reliability, and customer satisfaction that has defined
-                us for over 40 years.
+                us for over 20 years.
               </p>
               <div className={styles.storyStats}>
                 <div className={styles.storyStat}>
